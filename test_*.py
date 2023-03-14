@@ -2,6 +2,9 @@
 These tests cover DuckDuckGo searches.
 """
 
+from selenium import webdriver
+import time
+
 def test_basic_duckduckgo_search():
 
     # Given the DuckDuckGo home page is displayed
@@ -18,5 +21,14 @@ def test_basic_duckduckgo_search():
     
     # And the search result links pertain to "panda"
     # TODO
+
+  
+
+    driver = webdriver.Chrome()
+
+    driver.get('https://www.google.com')
+    time.sleep(5)
+
+    driver.quit()
 
     raise Exception("Incomplete Test")
