@@ -20,8 +20,6 @@ def browser():
 
   # Return the WebDriver instance for the setup
   yield b
-  
-  ######Everything after the yield is part of what we consider the cleanup phase.####
 
   # Quit the WebDriver instance for the cleanup
   b.quit()
